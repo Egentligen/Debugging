@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class Spawn : MonoBehaviour
 {
-    [SerializeField] Transform[] a;
-    [SerializeField] GameObject s;
+    [SerializeField] Transform[] spawnPositions;
+    [SerializeField] GameObject[] enemiesToSpawn;
     
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("Dothis", 1, .5f);
+        InvokeRepeating("SpawnEnemy", 0, .5f);
     }
 
-    void Dothis()
+    void SpawnEnemy()
     {
-        Instantiate(a[4], transform.position, Quaternion.identity);
+        Instantiate(enemiesToSpawn[1], spawnPositions[Random.Range(0, 7)].position, Quaternion.identity);
     }
 
     // Update is called once per frame
