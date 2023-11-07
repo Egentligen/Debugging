@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 6599846204409995229}
   - component: {fileID: 8968926826991767949}
   - component: {fileID: 7120132348638695062}
-  - component: {fileID: 2206674497590183972}
-  - component: {fileID: 558625692862024011}
+  - component: {fileID: 3622833699332184284}
   m_Layer: 0
   m_Name: Spot
   m_TagString: Untagged
@@ -76,9 +75,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 1
   m_Sprite: {fileID: -4880336612183257975, guid: b239ac5fbf73abb438d02e12c91ff47b, type: 3}
-  m_Color: {r: 1, g: 0.51320755, b: 0.56231546, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -150,7 +149,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2206674497590183972
+--- !u!114 &3622833699332184284
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -159,18 +158,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 4921461782547246742}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77018aaba53f9f0439f61b1546bb5df6, type: 3}
+  m_Script: {fileID: 11500000, guid: eb307626e293f0d4f8cb2db6a81be458, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &558625692862024011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4921461782547246742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 702c45d9c902928439ae1e56d1d4679b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  sizeChange: 0.5
+  spawnProtectionDuration: 1
+  doSizeChange: 0
+  isFriendly: 0
+  wobbleForce: 1
+  maxSize: 1.1
+  minSize: 0.9
+  doWobble: 1
+  moveForce: 20
+  doRandomMove: 1
+  seekSpeed: 0
+  follow: 
+  doSeek: 0
+  spinSpeed: 0
+  rotationSize: 0
+  doSpin: 0
+  lifeTime: 30

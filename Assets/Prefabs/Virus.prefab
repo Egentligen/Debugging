@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 8320896629358025410}
   - component: {fileID: 846653449857263961}
   - component: {fileID: 1424954993831992052}
-  - component: {fileID: 1178762080617573806}
-  - component: {fileID: 5847652270612703720}
+  - component: {fileID: 8123610774043721418}
   m_Layer: 0
   m_Name: Virus
   m_TagString: Untagged
@@ -31,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.72, y: 7.54, z: 0}
-  m_LocalScale: {x: 0.973836, y: 0.973836, z: 0.973836}
+  m_LocalScale: {x: 1, y: 1, z: 0.973836}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: e12ac9bacf88cea43af678cb0a1eb5ed, type: 3}
   m_Color: {r: 0.7830189, g: 0.49788183, b: 0.49788183, a: 0.6392157}
   m_FlipX: 0
@@ -120,9 +119,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.008280442}
   serializedVersion: 2
-  m_Radius: 0.71
+  m_Radius: 1.7947251
 --- !u!50 &1424954993831992052
 Rigidbody2D:
   serializedVersion: 4
@@ -150,7 +149,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1178762080617573806
+--- !u!114 &8123610774043721418
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -159,18 +158,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1418856614694918553}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77018aaba53f9f0439f61b1546bb5df6, type: 3}
+  m_Script: {fileID: 11500000, guid: eb307626e293f0d4f8cb2db6a81be458, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5847652270612703720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1418856614694918553}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 702c45d9c902928439ae1e56d1d4679b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  sizeChange: 0.5
+  spawnProtectionDuration: 1
+  doSizeChange: 0
+  isFriendly: 0
+  wobbleForce: 1
+  maxSize: 1.1
+  minSize: 0.9
+  doWobble: 1
+  moveForce: 0
+  doRandomMove: 0
+  seekSpeed: 2
+  follow: Friendly
+  doSeek: 1
+  spinSpeed: 0
+  rotationSize: 0
+  doSpin: 0
+  lifeTime: 30

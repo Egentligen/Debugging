@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7328802129059667868}
   - component: {fileID: 425662848260027985}
-  - component: {fileID: 4355696022673777881}
   - component: {fileID: 4769908972672713945}
-  - component: {fileID: 8003467616047304179}
-  - component: {fileID: 6035041924667293130}
+  - component: {fileID: 5938083856731373723}
+  - component: {fileID: 8005393986584810732}
   m_Layer: 0
   m_Name: GreenWorm
   m_TagString: Untagged
@@ -30,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 4366896031061470993}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.9984408, w: 0.055821486}
-  m_LocalPosition: {x: 13.08, y: 4.21, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 7.21, y: 9.04, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: faf1e3c10313bb34f9665a7ca534fcb3, type: 3}
   m_Color: {r: 0.4811321, g: 0.4797857, b: 0.07443927, a: 1}
   m_FlipX: 0
@@ -88,8 +87,64 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &4355696022673777881
-CircleCollider2D:
+--- !u!50 &4769908972672713945
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4366896031061470993}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &5938083856731373723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4366896031061470993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb307626e293f0d4f8cb2db6a81be458, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeChange: 0.5
+  spawnProtectionDuration: 1
+  doSizeChange: 0
+  isFriendly: 0
+  wobbleForce: 0
+  maxSize: 0
+  minSize: 0
+  doWobble: 0
+  moveForce: 10
+  doRandomMove: 1
+  seekSpeed: 0
+  follow: 
+  doSeek: 0
+  spinSpeed: 1
+  rotationSize: 0.1
+  doSpin: 1
+  lifeTime: 30
+--- !u!68 &8005393986584810732
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -121,56 +176,19 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 4.93
---- !u!50 &4769908972672713945
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4366896031061470993}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &8003467616047304179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4366896031061470993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77018aaba53f9f0439f61b1546bb5df6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &6035041924667293130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4366896031061470993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 702c45d9c902928439ae1e56d1d4679b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 6.0668516, y: -8.406712}
+  - {x: 5.0716186, y: -4.6968145}
+  - {x: 2.7970893, y: -0.847027}
+  - {x: 0.7792916, y: 0.65696365}
+  - {x: -3.7370145, y: 1.9568226}
+  - {x: -5.756324, y: 3.703782}
+  - {x: -5.372016, y: 7.140342}
+  - {x: -2.897078, y: 8.438961}
+  - {x: -0.34466976, y: 5.859633}
+  - {x: -2.148263, y: 3.6255085}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0

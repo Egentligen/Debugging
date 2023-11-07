@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 6391913737432830029}
   - component: {fileID: 8227039669266551995}
   - component: {fileID: 8249019091733552338}
-  - component: {fileID: 3786008935341640439}
-  - component: {fileID: 7646029797984039178}
+  - component: {fileID: 2947016243052350635}
   m_Layer: 0
   m_Name: Cactus
   m_TagString: Untagged
@@ -76,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 3d619e7e3eac439438c77836559fe87c, type: 3}
   m_Color: {r: 0.66415095, g: 1, b: 0.7517516, a: 0.34117648}
   m_FlipX: 0
@@ -150,7 +149,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &3786008935341640439
+--- !u!114 &2947016243052350635
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -159,18 +158,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 3518495405020367239}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77018aaba53f9f0439f61b1546bb5df6, type: 3}
+  m_Script: {fileID: 11500000, guid: eb307626e293f0d4f8cb2db6a81be458, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7646029797984039178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3518495405020367239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 702c45d9c902928439ae1e56d1d4679b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  sizeChange: 0.5
+  spawnProtectionDuration: 1
+  doSizeChange: 0
+  isFriendly: 0
+  wobbleForce: 0
+  maxSize: 0
+  minSize: 0
+  doWobble: 0
+  moveForce: 25
+  doRandomMove: 1
+  seekSpeed: 0
+  follow: 
+  doSeek: 0
+  spinSpeed: 4
+  rotationSize: 0
+  doSpin: 1
+  lifeTime: 30

@@ -12,14 +12,10 @@ GameObject:
   - component: {fileID: 9013714166898338401}
   - component: {fileID: 4756716922365448251}
   - component: {fileID: 8239237336661538877}
-  - component: {fileID: 1694836567218594147}
-  - component: {fileID: 1929053004000269641}
-  - component: {fileID: 3299416585239703044}
-  - component: {fileID: 662074088464615634}
-  - component: {fileID: 5460775974654855970}
+  - component: {fileID: 618132195511531549}
   m_Layer: 0
   m_Name: Crimson
-  m_TagString: dontforgettoupdatethetag
+  m_TagString: RedEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2510074555958477759}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.88, y: 5.51, z: 0}
+  m_LocalPosition: {x: -0.38847864, y: -6.73, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -79,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 06cfc8530699da742b25a2627e10ab1e, type: 3}
   m_Color: {r: 0.5943396, g: 0.05831255, b: 0.09107965, a: 0.8235294}
   m_FlipX: 0
@@ -152,20 +148,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &1694836567218594147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2510074555958477759}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77018aaba53f9f0439f61b1546bb5df6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1929053004000269641
+  m_Constraints: 4
+--- !u!114 &618132195511531549
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -174,42 +158,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 2510074555958477759}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1c35c7b1f7ea7c418064cd81cc77a34, type: 3}
+  m_Script: {fileID: 11500000, guid: eb307626e293f0d4f8cb2db6a81be458, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3299416585239703044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2510074555958477759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 702c45d9c902928439ae1e56d1d4679b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &662074088464615634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2510074555958477759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 702c45d9c902928439ae1e56d1d4679b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &5460775974654855970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2510074555958477759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e4931b52c8d6394a95e33be451ce939, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  sizeChange: 0.5
+  spawnProtectionDuration: 1
+  doSizeChange: 0
+  isFriendly: 0
+  wobbleForce: 0.1
+  maxSize: 1.5
+  minSize: 0.6
+  doWobble: 1
+  moveForce: 1
+  doRandomMove: 0
+  seekSpeed: 5
+  follow: Player
+  doSeek: 1
+  spinSpeed: 0
+  rotationSize: 0
+  doSpin: 0
+  lifeTime: 30

@@ -12,9 +12,7 @@ GameObject:
   - component: {fileID: 6352050389273915998}
   - component: {fileID: 2382420137665572769}
   - component: {fileID: 8911865550355270889}
-  - component: {fileID: 2248728567888286935}
-  - component: {fileID: 5479078311107478813}
-  - component: {fileID: 8767649511844521609}
+  - component: {fileID: 1289305615878051745}
   m_Layer: 0
   m_Name: Brown
   m_TagString: Untagged
@@ -77,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 190cd272fb32d774c8d91c6874ebdf3c, type: 3}
   m_Color: {r: 1, g: 0.71115816, b: 0, a: 1}
   m_FlipX: 0
@@ -121,9 +119,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.052179575, y: -0.020872116}
   serializedVersion: 2
-  m_Radius: 2.14
+  m_Radius: 1.691257
 --- !u!50 &8911865550355270889
 Rigidbody2D:
   serializedVersion: 4
@@ -151,19 +149,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2248728567888286935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7157546073520013185}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77018aaba53f9f0439f61b1546bb5df6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &5479078311107478813
+--- !u!114 &1289305615878051745
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -172,18 +158,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 7157546073520013185}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1c35c7b1f7ea7c418064cd81cc77a34, type: 3}
+  m_Script: {fileID: 11500000, guid: eb307626e293f0d4f8cb2db6a81be458, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8767649511844521609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7157546073520013185}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 702c45d9c902928439ae1e56d1d4679b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  sizeChange: 0.5
+  spawnProtectionDuration: 1
+  doSizeChange: 0
+  isFriendly: 0
+  wobbleForce: 1
+  maxSize: 1.1
+  minSize: 0.9
+  doWobble: 1
+  moveForce: 10
+  doRandomMove: 1
+  seekSpeed: 3
+  follow: Friendly
+  doSeek: 1
+  spinSpeed: 0
+  rotationSize: 0
+  doSpin: 0
+  lifeTime: 30
